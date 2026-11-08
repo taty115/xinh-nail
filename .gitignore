@@ -1,0 +1,4 @@
+# dữ liệu lịch hẹn thật – không đưa lên GitHub
+data/bookings.db*
+node_modules/
+.DS_Store

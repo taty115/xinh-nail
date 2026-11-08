@@ -1,0 +1,14 @@
+{
+  "name": "xinh-nail",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Website tiệm nail + hệ thống đặt lịch theo chi nhánh và thợ",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "deploy": "git subtree push --prefix public origin gh-pages"
+  }
+}
