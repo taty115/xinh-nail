@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Quản lý lịch – Xinh Nail</title>
+    <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="booking.css" />
+  <style>
+    .ad { padding: 100px 0 60px; }
+    .ad__login { max-width: 380px; margin: 60px auto; background: #fff; padding: 2rem; border-radius: 24px; box-shadow: var(--shadow); display: grid; gap: 1rem; }
+    .ad__bar { display: flex; flex-wrap: wrap; gap: .8rem; align-items: end; background: #fff; padding: 1.2rem; border-radius: 20px; box-shadow: var(--shadow-sm); margin-bottom: 1.4rem; }
+    .ad__bar .field { min-width: 180px; }
+    .ad__stats { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.4rem; }
+    .ad__stat { background: #fff; border-radius: 18px; padding: .9rem 1.3rem; box-shadow: var(--shadow-sm); }
+    .ad__stat small { display: block; color: var(--muted); font-size: .8rem; }
+    .ad__stat strong { font: 700 1.4rem var(--font-serif); color: var(--plum); }
+    .card { background: #fff; border-radius: 24px; box-shadow: var(--shadow-sm); padding: 1.2rem; margin-bottom: 1.4rem; overflow-x: auto; }
+    .card h2 { font-size: 1.3rem; margin: .2rem 0 1rem; }
+    table.grid { border-collapse: separate; border-spacing: 0; width: 100%; min-width: 520px; font-size: .85rem; }
+    .grid th { position: sticky; top: 0; background: var(--rose-50); color: var(--plum); padding: .6rem; text-align: left; font-weight: 600; }
+    .grid td { border-top: 1px solid var(--rose-100); padding: 0; height: 30px; vertical-align: top; }
+    .grid td.t { width: 64px; color: var(--muted); padding: .3rem .5rem; font-variant-numeric: tabular-nums; }
+    .grid td.off { background: repeating-linear-gradient(45deg, #faf5f7, #faf5f7 6px, #f3ebee 6px, #f3ebee 12px); }
+    .blk { margin: 2px; height: calc(100% - 4px); border-radius: 10px; padding: .35rem .55rem; background: linear-gradient(135deg, var(--rose-200), var(--rose-300)); color: var(--plum); line-height: 1.35; }
+    .blk.done { background: #d9f0e3; color: #2f6b4a; }
+    .blk strong { display: block; }
+    .list { width: 100%; border-collapse: collapse; font-size: .9rem; min-width: 760px; }
+    .list th, .list td { text-align: left; padding: .7rem .6rem; border-bottom: 1px solid var(--rose-100); vertical-align: top; }
+    .list th { color: var(--muted); font-weight: 500; font-size: .8rem; }
+    .badge { font-size: .72rem; font-weight: 600; padding: 3px 9px; border-radius: 99px; white-space: nowrap; }
+    .badge.confirmed { background: var(--rose-100); color: var(--rose-600); }
+    .badge.done { background: #d9f0e3; color: #2f6b4a; }
+    .badge.cancelled { background: #eee; color: #888; }
+    tr.is-cancelled td { opacity: .5; }
+    .act { display: flex; gap: .4rem; }
+    .act button { font: 500 .78rem var(--font-sans); border: 1px solid var(--rose-200); background: #fff; border-radius: 99px; padding: .35em .8em; cursor: pointer; }
+    .act button:hover { background: var(--rose-50); }
+    .empty-note { color: var(--muted); padding: 1rem; text-align: center; }
+  </style>
+</head>
+<body class="bk-body">
+  <header class="nav is-scrolled">
+    <div class="container nav__inner">
+      <a href="index.html" class="logo"><span class="logo__mark">✿</span><span>Xinh <em>Admin</em></span></a>
+      <button class="bk__home btn btn--ghost btn--sm" id="logout" hidden>Đăng xuất</button>
+    </div>
+  </header>
+
+  <main class="ad container">
+    <form class="ad__login" id="login">
+      <h2>Quản lý <em>lịch hẹn</em></h2>
+      <label class="field"><span>Mật khẩu</span><input type="password" name="key" required autocomplete="current-password" /></label>
+      <p class="bk__error" id="loginErr"></p>
+      <button class="btn btn--primary">Đăng nhập</button>
+    </form>
+
+    <div id="app" hidden>
+      <div class="ad__bar">
+        <label class="field"><span>Chi nhánh</span><select id="fBranch"></select></label>
+        <label class="field"><span>Ngày</span><input type="date" id="fDate" /></label>
+        <button class="btn btn--ghost btn--sm" id="prevDay" type="button">← Hôm trước</button>
+        <button class="btn btn--ghost btn--sm" id="nextDay" type="button">Hôm sau →</button>
+        <button class="btn btn--primary btn--sm" id="refresh" type="button">↻ Làm mới</button>
+      </div>
+      <div class="ad__stats" id="stats"></div>
+      <div class="card"><h2>Lịch theo thợ</h2><div id="grid"></div></div>
+      <div class="card"><h2>Danh sách lịch hẹn</h2><div id="list"></div></div>
+    </div>
+  </main>
+
+  <script src="demo-api.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

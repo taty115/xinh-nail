@@ -1,0 +1,52 @@
+{
+  "shopName": "Xinh Nail Studio",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "slotMinutes": 30,
+  "maxDaysAhead": 14,
+  "minLeadMinutes": 30,
+  "maxActiveBookingsPerPhone": 3,
+
+  "branches": [
+    {
+      "id": "q1",
+      "name": "Xinh Nail – Quận 1",
+      "address": "123 Nguyễn Trãi, Phường Bến Thành, Quận 1, TP.HCM",
+      "phone": "0909123456",
+      "open": "09:00",
+      "close": "21:00"
+    },
+    {
+      "id": "q3",
+      "name": "Xinh Nail – Quận 3",
+      "address": "45 Võ Văn Tần, Phường 6, Quận 3, TP.HCM",
+      "phone": "0909654321",
+      "open": "09:30",
+      "close": "20:30"
+    }
+  ],
+
+  "staff": [
+    { "id": "linh", "branch": "q1", "name": "Chị Linh", "title": "Thợ chính · 8 năm", "offDays": [1] },
+    { "id": "mai",  "branch": "q1", "name": "Chị Mai",  "title": "Chuyên nail art",   "offDays": [3] },
+    { "id": "vy",   "branch": "q1", "name": "Bạn Vy",   "title": "Chuyên đắp bột",    "offDays": [] },
+    { "id": "hoa",  "branch": "q3", "name": "Chị Hoa",  "title": "Thợ chính · 6 năm", "offDays": [2] },
+    { "id": "trang","branch": "q3", "name": "Bạn Trang","title": "Chuyên sơn gel",    "offDays": [] }
+  ],
+
+  "services": [
+    { "id": "gel-tay",     "category": "Móng tay",   "name": "Sơn gel trơn tay",            "price": 120000, "duration": 45 },
+    { "id": "gel-matmeo",  "category": "Móng tay",   "name": "Sơn gel mắt mèo / tráng gương","price": 180000, "duration": 60 },
+    { "id": "french",      "category": "Móng tay",   "name": "Sơn French tip",              "price": 160000, "duration": 60 },
+    { "id": "catda-tay",   "category": "Móng tay",   "name": "Cắt da, dũa form",            "price": 50000,  "duration": 20 },
+    { "id": "gel-chan",    "category": "Móng chân",  "name": "Sơn gel chân",                "price": 120000, "duration": 45 },
+    { "id": "spa-chan",    "category": "Móng chân",  "name": "Spa chân trọn gói",           "price": 200000, "duration": 60 },
+    { "id": "up-mong",     "category": "Đắp & Úp",   "name": "Úp móng giả (kèm gel)",       "price": 200000, "duration": 60 },
+    { "id": "dap-gel",     "category": "Đắp & Úp",   "name": "Đắp gel tự nhiên",            "price": 280000, "duration": 90 },
+    { "id": "dap-bot",     "category": "Đắp & Úp",   "name": "Đắp bột",                     "price": 300000, "duration": 90 },
+    { "id": "art-basic",   "category": "Nail art",   "name": "Nail art đơn giản (cả bộ)",   "price": 80000,  "duration": 30 },
+    { "id": "art-detail",  "category": "Nail art",   "name": "Nail art chi tiết (cả bộ)",   "price": 200000, "duration": 60 },
+    { "id": "combo-basic", "category": "Combo",      "name": "Combo Xinh Basic",            "price": 199000, "duration": 75 },
+    { "id": "combo-glow",  "category": "Combo",      "name": "Combo Xinh Glow",             "price": 349000, "duration": 120 },
+    { "id": "combo-lux",   "category": "Combo",      "name": "Combo Xinh Luxury",           "price": 549000, "duration": 150 }
+  ]
+}

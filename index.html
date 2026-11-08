@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Xinh Nail Studio – Làm đẹp móng tay, móng chân</title>
+  <meta name="description" content="Xinh Nail Studio – sơn gel, nail art, đắp móng, chăm sóc móng tay chân. Đặt lịch online nhanh chóng." />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Ẩn khối .reveal chỉ khi JS chạy; nếu script.js lỗi/không tải được thì 2,5s sau hiện lại toàn bộ
+    document.documentElement.classList.add("js-reveal");
+    setTimeout(function () { if (!window.__revealReady) document.documentElement.classList.remove("js-reveal"); }, 2500);
+  </script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💅</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="logo">
+        <span class="logo__mark">✿</span>
+        <span>Xinh <em>Nail</em></span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#dich-vu">Dịch vụ</a>
+        <a href="#bang-gia">Bảng giá</a>
+        <a href="#mau-nail">Mẫu nail</a>
+        <a href="booking.html">Đặt lịch</a>
+        <a href="#lien-he">Liên hệ</a>
+      </nav>
+      <a href="booking.html" class="btn btn--primary btn--sm nav__cta">Đặt lịch ngay</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Mở menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO (ảnh nền: images/banner.webp) ===== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text reveal reveal--left">
+          <span class="eyebrow">✦ Nail Studio · Since 2020</span>
+          <h1>Đôi bàn tay xinh,<br /><em>tự tin</em> mỗi ngày</h1>
+          <p class="lead">Sơn gel, nail art, đắp móng và chăm sóc da tay chân bởi đội ngũ thợ tận tâm. Dụng cụ tiệt trùng 100%, sơn chính hãng, không gian thơm mát thư giãn.</p>
+          <div class="hero__actions">
+            <a href="booking.html" class="btn btn--primary">Đặt lịch ngay 💅</a>
+            <a href="#bang-gia" class="btn btn--ghost">Xem bảng giá</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>5.000+</strong><span>khách hàng</span></li>
+            <li><strong>4.9★</strong><span>đánh giá</span></li>
+            <li><strong>300+</strong><span>mẫu nail</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Sơn gel ✿ Nail art ✿ Đắp bột ✿ Úp móng ✿ Chăm sóc da ✿ Ngâm chân thảo dược ✿ Đính đá ✿ French tip ✿ </span>
+        <span>Sơn gel ✿ Nail art ✿ Đắp bột ✿ Úp móng ✿ Chăm sóc da ✿ Ngâm chân thảo dược ✿ Đính đá ✿ French tip ✿ </span>
+      </div>
+    </div>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section" id="dich-vu">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Dịch vụ</span>
+          <h2>Chăm chút từng <em>chi tiết nhỏ</em></h2>
+        </div>
+        <div class="services">
+          <article class="service reveal">
+            <div class="service__icon">💅</div>
+            <h3>Sơn gel</h3>
+            <p>Hơn 300 màu gel Hàn Quốc, Nhật Bản. Bóng đẹp, bền màu 3–4 tuần.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon">🎨</div>
+            <h3>Nail art</h3>
+            <p>Vẽ tay, ombre, mắt mèo, tráng gương, đính đá – theo mẫu hoặc thiết kế riêng.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon">✨</div>
+            <h3>Đắp & úp móng</h3>
+            <p>Đắp bột, đắp gel, úp móng giả tự nhiên, dáng móng chuẩn form tay.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon">🌸</div>
+            <h3>Chăm sóc da</h3>
+            <p>Ngâm thảo dược, tẩy da chết, massage, dưỡng ẩm cho tay chân mềm mịn.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICE LIST ===== -->
+    <section class="section section--tint" id="bang-gia">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Bảng giá</span>
+          <h2>Giá <em>minh bạch</em>, không phát sinh</h2>
+          <p class="muted">Giá đã bao gồm dụng cụ tiệt trùng riêng cho từng khách.</p>
+        </div>
+
+        <div class="tabs reveal" role="tablist">
+          <button class="tab is-active" data-tab="tay" role="tab">Móng tay</button>
+          <button class="tab" data-tab="chan" role="tab">Móng chân</button>
+          <button class="tab" data-tab="dap" role="tab">Đắp & Úp</button>
+          <button class="tab" data-tab="art" role="tab">Nail art</button>
+          <button class="tab" data-tab="combo" role="tab">Combo ưu đãi</button>
+        </div>
+
+        <div class="price-card reveal reveal--zoom">
+          <div class="price-panel is-active" data-panel="tay">
+            <ul class="price-list">
+              <li><span class="pl__name">Cắt da, dũa form</span><span class="pl__dots"></span><span class="pl__price">50.000đ</span></li>
+              <li><span class="pl__name">Sơn thường</span><span class="pl__dots"></span><span class="pl__price">60.000đ</span></li>
+              <li><span class="pl__name">Sơn gel trơn <small class="tag">Hot</small></span><span class="pl__dots"></span><span class="pl__price">120.000đ</span></li>
+              <li><span class="pl__name">Sơn gel mắt mèo / tráng gương</span><span class="pl__dots"></span><span class="pl__price">180.000đ</span></li>
+              <li><span class="pl__name">Sơn French tip</span><span class="pl__dots"></span><span class="pl__price">160.000đ</span></li>
+              <li><span class="pl__name">Phá gel cũ</span><span class="pl__dots"></span><span class="pl__price">30.000đ</span></li>
+              <li><span class="pl__name">Dưỡng móng, liên kết móng</span><span class="pl__dots"></span><span class="pl__price">40.000đ</span></li>
+            </ul>
+          </div>
+
+          <div class="price-panel" data-panel="chan">
+            <ul class="price-list">
+              <li><span class="pl__name">Cắt da, dũa form chân</span><span class="pl__dots"></span><span class="pl__price">60.000đ</span></li>
+              <li><span class="pl__name">Sơn gel chân</span><span class="pl__dots"></span><span class="pl__price">120.000đ</span></li>
+              <li><span class="pl__name">Ngâm chân thảo dược <small class="tag">Mới</small></span><span class="pl__dots"></span><span class="pl__price">80.000đ</span></li>
+              <li><span class="pl__name">Chà gót, tẩy da chết</span><span class="pl__dots"></span><span class="pl__price">100.000đ</span></li>
+              <li><span class="pl__name">Spa chân trọn gói (ngâm + chà + massage)</span><span class="pl__dots"></span><span class="pl__price">200.000đ</span></li>
+              <li><span class="pl__name">Xử lý móng quặp, khóe</span><span class="pl__dots"></span><span class="pl__price">từ 50.000đ</span></li>
+            </ul>
+          </div>
+
+          <div class="price-panel" data-panel="dap">
+            <ul class="price-list">
+              <li><span class="pl__name">Úp móng giả (kèm sơn gel)</span><span class="pl__dots"></span><span class="pl__price">200.000đ</span></li>
+              <li><span class="pl__name">Đắp gel tự nhiên</span><span class="pl__dots"></span><span class="pl__price">280.000đ</span></li>
+              <li><span class="pl__name">Đắp bột <small class="tag">Bền</small></span><span class="pl__dots"></span><span class="pl__price">300.000đ</span></li>
+              <li><span class="pl__name">Nối móng dài (từ size M)</span><span class="pl__dots"></span><span class="pl__price">+50.000đ</span></li>
+              <li><span class="pl__name">Fill / dặm móng đắp</span><span class="pl__dots"></span><span class="pl__price">180.000đ</span></li>
+              <li><span class="pl__name">Tháo móng đắp</span><span class="pl__dots"></span><span class="pl__price">50.000đ</span></li>
+            </ul>
+          </div>
+
+          <div class="price-panel" data-panel="art">
+            <ul class="price-list">
+              <li><span class="pl__name">Vẽ đơn giản (1 móng)</span><span class="pl__dots"></span><span class="pl__price">10.000đ</span></li>
+              <li><span class="pl__name">Vẽ chi tiết (1 móng)</span><span class="pl__dots"></span><span class="pl__price">20–40.000đ</span></li>
+              <li><span class="pl__name">Ombre / loang màu</span><span class="pl__dots"></span><span class="pl__price">+50.000đ</span></li>
+              <li><span class="pl__name">Đính đá nhỏ (1 viên)</span><span class="pl__dots"></span><span class="pl__price">5.000đ</span></li>
+              <li><span class="pl__name">Charm / đá khối (1 viên)</span><span class="pl__dots"></span><span class="pl__price">từ 15.000đ</span></li>
+              <li><span class="pl__name">Sticker, nhũ, foil</span><span class="pl__dots"></span><span class="pl__price">+20.000đ</span></li>
+            </ul>
+          </div>
+
+          <div class="price-panel" data-panel="combo">
+            <div class="combos">
+              <div class="combo">
+                <span class="combo__badge">Tiết kiệm</span>
+                <h3>Xinh Basic</h3>
+                <p class="combo__price">199.000đ <s>240.000đ</s></p>
+                <ul><li>Cắt da tay + chân</li><li>Sơn gel tay trơn</li><li>Dưỡng móng</li></ul>
+              </div>
+              <div class="combo combo--featured">
+                <span class="combo__badge">Bán chạy nhất</span>
+                <h3>Xinh Glow</h3>
+                <p class="combo__price">349.000đ <s>420.000đ</s></p>
+                <ul><li>Sơn gel tay + chân</li><li>Nail art 2 móng</li><li>Ngâm chân thảo dược</li></ul>
+              </div>
+              <div class="combo">
+                <span class="combo__badge">Thư giãn</span>
+                <h3>Xinh Luxury</h3>
+                <p class="combo__price">549.000đ <s>680.000đ</s></p>
+                <ul><li>Đắp gel tay + nail art</li><li>Spa chân trọn gói</li><li>Massage tay 15 phút</li></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="section" id="mau-nail">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Mẫu nail</span>
+          <h2>Bộ sưu tập <em>được yêu thích</em></h2>
+        </div>
+        <div class="gallery">
+          <figure class="photo reveal reveal--zoom"><img src="images/gallery/1.jpg" alt="Mẫu nail Hồng vẽ tim" loading="lazy" /><figcaption>Hồng vẽ tim</figcaption></figure>
+          <figure class="photo reveal reveal--zoom"><img src="images/gallery/2.jpg" alt="Mẫu nail French đính đá" loading="lazy" /><figcaption>French đính đá</figcaption></figure>
+          <figure class="photo reveal reveal--zoom"><img src="images/gallery/3.jpg" alt="Mẫu nail Đen nhũ kim tuyến" loading="lazy" /><figcaption>Đen nhũ kim tuyến</figcaption></figure>
+          <figure class="photo reveal reveal--zoom"><img src="images/gallery/4.jpg" alt="Mẫu nail Pastel tím mint" loading="lazy" /><figcaption>Pastel tím mint</figcaption></figure>
+          <figure class="photo reveal reveal--zoom"><img src="images/gallery/5.jpg" alt="Mẫu nail Đỏ rượu chấm tim" loading="lazy" /><figcaption>Đỏ rượu chấm tim</figcaption></figure>
+          <figure class="photo reveal reveal--zoom"><img src="images/gallery/6.jpg" alt="Mẫu nail Ombre lửa" loading="lazy" /><figcaption>Ombre lửa</figcaption></figure>
+          <figure class="photo reveal reveal--zoom"><img src="images/gallery/7.jpg" alt="Mẫu nail Zigzag đỏ trắng" loading="lazy" /><figcaption>Zigzag đỏ trắng</figcaption></figure>
+          <figure class="photo reveal reveal--zoom"><img src="images/gallery/8.jpg" alt="Mẫu nail French vẽ hoa" loading="lazy" /><figcaption>French vẽ hoa</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CUSTOMERS ===== -->
+    <!-- Ảnh: đặt vào public/images/customers/1.jpg ... 4.jpg, ảnh nền tiệm: public/images/salon-bg.jpg -->
+    <section class="celebs" id="khach-hang">
+      <div class="container">
+        <h2 class="celebs__title reveal"><span>Khách hàng của</span> <b>Xinh Nail</b></h2>
+        <div class="celebs__grid">
+          <figure class="celeb reveal">
+            <div class="celeb__photo"><img src="images/customers/1.jpg" alt="Ngọc Anh làm nail tại Xinh Nail" loading="lazy" onerror="this.remove()" /></div>
+            <figcaption><strong>Ngọc Anh</strong><span>Diễn viên</span></figcaption>
+          </figure>
+          <figure class="celeb reveal">
+            <div class="celeb__photo"><img src="images/customers/2.jpg" alt="Thu Trang làm nail tại Xinh Nail" loading="lazy" onerror="this.remove()" /></div>
+            <figcaption><strong>Thu Trang</strong><span>Ca sĩ</span></figcaption>
+          </figure>
+          <figure class="celeb reveal">
+            <div class="celeb__photo"><img src="images/customers/3.jpg" alt="Minh Thư làm nail tại Xinh Nail" loading="lazy" onerror="this.remove()" /></div>
+            <figcaption><strong>Minh Thư</strong><span>Hot girl</span></figcaption>
+          </figure>
+          <figure class="celeb reveal">
+            <div class="celeb__photo"><img src="images/customers/4.jpg" alt="Bảo Ngọc làm nail tại Xinh Nail" loading="lazy" onerror="this.remove()" /></div>
+            <figcaption><strong>Bảo Ngọc</strong><span>Người mẫu</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BOOKING ===== -->
+    <section class="section" id="dat-lich">
+      <div class="container booking">
+        <div class="booking__info reveal reveal--left">
+          <span class="eyebrow">Đặt lịch</span>
+          <h2>Giữ chỗ cho <em>bạn</em> nhé!</h2>
+          <p class="muted">Chọn chi nhánh, thợ và khung giờ còn trống – lịch được giữ ngay lập tức. Hoặc liên hệ trực tiếp:</p>
+          <div class="quick-contacts">
+            <a class="qc" href="tel:0909123456"><span>📞</span><div><small>Hotline</small><strong>0909 123 456</strong></div></a>
+            <a class="qc" href="https://zalo.me/0909123456" target="_blank" rel="noopener"><span>💬</span><div><small>Zalo</small><strong>Nhắn tin ngay</strong></div></a>
+            <a class="qc" href="https://facebook.com/" target="_blank" rel="noopener"><span>📘</span><div><small>Facebook</small><strong>Xinh Nail Studio</strong></div></a>
+          </div>
+          <div class="note">🎁 Giảm <strong>10%</strong> cho khách đặt lịch online lần đầu!</div>
+        </div>
+
+        <div class="form book-cta reveal reveal--right">
+          <h3>Đặt lịch online <em>chỉ 1 phút</em></h3>
+          <ol class="book-steps">
+            <li><span>1</span><div><strong>Chọn chi nhánh</strong><small>Quận 1 hoặc Quận 3</small></div></li>
+            <li><span>2</span><div><strong>Chọn dịch vụ</strong><small>Xem giá &amp; thời gian làm</small></div></li>
+            <li><span>3</span><div><strong>Chọn thợ yêu thích</strong><small>Hoặc để tiệm xếp thợ trống</small></div></li>
+            <li><span>4</span><div><strong>Chọn giờ còn trống</strong><small>Giờ nào full sẽ được báo ngay</small></div></li>
+          </ol>
+          <a href="booking.html" class="btn btn--primary btn--block">Đặt lịch ngay ✨</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT / MAP ===== -->
+    <section class="section section--tint" id="lien-he">
+      <div class="container contact">
+        <div class="contact__info reveal reveal--left">
+          <span class="eyebrow">Địa chỉ</span>
+          <h2>Ghé <em class="pop-word">Xinh</em> chơi nha</h2>
+          <ul class="info-list">
+            <li><span>📍</span><div><strong>Chi nhánh Quận 1</strong><p>123 Nguyễn Trãi, Phường Bến Thành, Quận 1, TP.HCM<br/>9:00 – 21:00 · <a href="tel:0909123456">0909 123 456</a></p><a class="branch-link" href="booking.html?branch=q1">Đặt lịch chi nhánh này →</a></div></li>
+            <li><span>📍</span><div><strong>Chi nhánh Quận 3</strong><p>45 Võ Văn Tần, Phường 6, Quận 3, TP.HCM<br/>9:30 – 20:30 · <a href="tel:0909654321">0909 654 321</a></p><a class="branch-link" href="booking.html?branch=q3">Đặt lịch chi nhánh này →</a></div></li>
+            <li><span>🅿️</span><div><strong>Gửi xe</strong><p>Miễn phí gửi xe máy trước tiệm</p></div></li>
+          </ul>
+          <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=123+Nguy%E1%BB%85n+Tr%C3%A3i+Qu%E1%BA%ADn+1+TP+H%E1%BB%93+Ch%C3%AD+Minh" target="_blank" rel="noopener">Chỉ đường Google Maps →</a>
+        </div>
+        <div class="map reveal reveal--right">
+          <iframe
+            title="Bản đồ Xinh Nail Studio"
+            src="https://www.google.com/maps?q=123+Nguy%E1%BB%85n+Tr%C3%A3i+Qu%E1%BA%ADn+1+TP+H%E1%BB%93+Ch%C3%AD+Minh&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo logo--light"><span class="logo__mark">✿</span><span>Xinh <em>Nail</em></span></a>
+      <p>Làm đẹp từ những điều nhỏ xinh 💗</p>
+      <p class="footer__copy"><a href="images/CREDITS.md">Ảnh demo: Openverse (CC)</a> · © <span id="year"></span> Xinh Nail Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Nút liên hệ bên hông -->
+  <div class="side-contact">
+    <a href="https://zalo.me/0909123456" target="_blank" rel="noopener" class="side-tab side-tab--text" aria-label="Nhắn Zalo">Zalo</a>
+    <a href="https://m.me/" target="_blank" rel="noopener" class="side-tab" aria-label="Nhắn Messenger">
+      <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5c-4.97 0-9 3.58-9 8 0 2.1.9 4 2.4 5.43L4.5 20.5l3.9-1.6c1.1.4 2.3.6 3.6.6 4.97 0 9-3.58 9-8s-4.03-8-9-8z"/><circle cx="8.2" cy="11.5" r=".6" fill="currentColor"/><circle cx="12" cy="11.5" r=".6" fill="currentColor"/><circle cx="15.8" cy="11.5" r=".6" fill="currentColor"/></svg>
+    </a>
+    <a href="tel:0909123456" class="side-tab" aria-label="Gọi điện">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16.5v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.1 3.7 2 2 0 0 1 3.1 1.5h3a2 2 0 0 1 2 1.7c.13 1 .37 1.97.72 2.9a2 2 0 0 1-.45 2.1L7.1 9.5a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.93.35 1.9.6 2.9.72a2 2 0 0 1 1.6 2z"/></svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

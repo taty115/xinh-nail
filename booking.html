@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Đặt lịch – Xinh Nail Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="booking.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💅</text></svg>" />
+</head>
+<body class="bk-body">
+  <header class="nav is-scrolled">
+    <div class="container nav__inner">
+      <a href="index.html" class="logo"><span class="logo__mark">✿</span><span>Xinh <em>Nail</em></span></a>
+      <a href="index.html" class="bk__home">← Về trang chủ</a>
+    </div>
+  </header>
+
+  <main class="bk">
+    <div class="container">
+      <div class="bk__panel">
+      <div class="bk__head">
+        <span class="eyebrow">Đặt lịch online</span>
+        <h1>Đặt lịch <em>làm nail</em></h1>
+      </div>
+
+      <ol class="steps" id="steps">
+        <li data-step="1"><span>1</span>Chi nhánh</li>
+        <li data-step="2"><span>2</span>Dịch vụ</li>
+        <li data-step="3"><span>3</span>Thợ</li>
+        <li data-step="4"><span>4</span>Thời gian</li>
+        <li data-step="5"><span>5</span>Xác nhận</li>
+      </ol>
+
+      <div class="bk__wrap" id="wizard">
+        <div class="bk__main">
+          <!-- Step 1 -->
+          <section class="bk-step" data-step="1">
+            <h2>Bạn muốn đến <em>chi nhánh</em> nào?</h2>
+            <div class="opt-grid" id="branchList"></div>
+          </section>
+
+          <!-- Step 2 -->
+          <section class="bk-step" data-step="2">
+            <h2>Chọn <em>dịch vụ</em></h2>
+            <p class="muted">Có thể chọn nhiều dịch vụ. Thời gian làm sẽ được cộng dồn.</p>
+            <div id="serviceList"></div>
+          </section>
+
+          <!-- Step 3 -->
+          <section class="bk-step" data-step="3">
+            <h2>Chọn <em>thợ</em> yêu thích</h2>
+            <div class="opt-grid" id="staffList"></div>
+          </section>
+
+          <!-- Step 4 -->
+          <section class="bk-step" data-step="4">
+            <div class="time-head">
+              <h2>Thời gian <em>đặt lịch</em></h2>
+              <span class="time-head__date" id="dateLabel"></span>
+            </div>
+            <div class="dates" id="dateList"></div>
+            <p class="slots-title">Chọn khung giờ phục vụ (*)</p>
+            <div id="slotList" class="slots-wrap"></div>
+          </section>
+
+          <!-- Step 5 -->
+          <section class="bk-step" data-step="5">
+            <h2>Thông tin <em>của bạn</em></h2>
+            <form id="infoForm" class="bk-form" novalidate>
+              <label class="field"><span>Họ tên *</span><input name="name" required placeholder="Nguyễn Thị Xinh" autocomplete="name" /></label>
+              <label class="field"><span>Số điện thoại *</span><input name="phone" type="tel" required placeholder="09xx xxx xxx" autocomplete="tel" /></label>
+              <label class="field"><span>Ghi chú</span><textarea name="note" rows="3" placeholder="Mẫu nail, màu yêu thích..."></textarea></label>
+            </form>
+          </section>
+
+          <p class="bk__error" id="bkError" role="alert"></p>
+          <div class="bk__nav">
+            <button class="btn btn--ghost" id="backBtn" type="button">← Quay lại</button>
+            <button class="btn btn--primary" id="nextBtn" type="button">Tiếp tục →</button>
+          </div>
+        </div>
+
+        <aside class="bk__summary" id="summary"></aside>
+      </div>
+
+      </div>
+
+      <!-- Success -->
+      <section class="bk-done" id="done" hidden></section>
+    </div>
+  </main>
+
+  <script src="demo-api.js"></script>
+  <script src="booking.js"></script>
+</body>
+</html>
